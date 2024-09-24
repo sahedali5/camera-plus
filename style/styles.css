@@ -1,0 +1,41 @@
+/* poppins font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+/* sheared style  */
+
+/* header section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5.25em;
+    margin-left: 7.5em;
+    margin-right: 7.5em;
+
+}
+
+header h3 {
+    color: #3A3A3A;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+
+nav>ul {
+    display: flex;
+}
+
+li {
+    list-style-type: none;
+    margin-right: 2.125em;
+}
+
+ul>li a {
+    color: #3A3A3A;
+    text-decoration: none;
+    font-weight: 600;
+}
