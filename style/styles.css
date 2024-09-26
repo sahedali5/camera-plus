@@ -146,6 +146,46 @@ ul>li a {
     font-size: 0.9em;
 }
 
+/* featured place style */
+.featured {
+    display: flex;
+    margin: 6.25em 10.26em;
+    gap: 5.58em;
+}
+
+/* footer style */
+footer {
+    background: #0A0826;
+    text-align: center;
+}
+
+footer>ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-title {
+    color: #FFF;
+    font-size: 1.50em;
+    font-weight: 700;
+    padding-top: 3.125em;
+    margin-bottom: 0.123em;
+
+}
+
+.footer-description {
+    color: #D9DBE1;
+    font-size: .80em;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+.fa-brands {
+    color: #FFF;
+    padding-bottom: 3.123em;
+}
+
 /* responsive style for mobile devices */
 @media screen and (max-width:576px) {
 
@@ -154,7 +194,8 @@ ul>li a {
         flex-direction: column;
     }
 
-    header {
+    header,
+    .featured {
         margin: 1em;
     }
 
@@ -169,7 +210,8 @@ ul>li a {
         width: 90%;
     }
 
-    .influencer-img .main-camera {
+    .influencer-img .main-camera,
+    .featured-img img {
         width: 100%;
     }
 
@@ -188,12 +230,18 @@ ul>li a {
         margin-top: 3em;
     }
 
-
+    .featured {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
 
 }
 
 /* medium devices style */
 @media screen and (min-width:576px) and (max-width:990px) {
+    .influencer-img .circle-background {
+        width: 55%;
+    }
 
     .sponsored-img,
     .influencer {
@@ -206,6 +254,10 @@ ul>li a {
         margin-right: 1em;
     }
 
+    .featured {
+        flex-direction: column-reverse;
+        text-align: center;
 
+    }
 
 }
